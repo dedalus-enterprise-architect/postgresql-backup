@@ -108,7 +108,7 @@ PGBCK_RETENTION_TYPE_LIST=("disabled" "redundancy" "time-window") # disabled has
 PGBCK_RETURN_FILE="/tmp/pgbb.rc"
 PGBCK_START_DATE_BCK=`date +%Y%m%d`
 PGBCK_SCRIPT_NAME="Auto PostgreSQL Backup"
-PGBCK_SCRIPT_VERSION="v.1.3"
+PGBCK_SCRIPT_VERSION="v.1.2"
 PGBCK_SCRIPT_DATE_VERSION="2023.01.27"
 # ---
 

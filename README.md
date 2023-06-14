@@ -27,12 +27,9 @@ The provided code is a shell script that defines and executes a function called 
 |PGBCK_KEEP_BACKUP_DEST|boolean|"false"|If true, the script checks if the PGBCK_BACKUP_DEST exists. If it exists, the current backup (and log) will be renamed, and a new backup will be created. If false, the script will overwrite the backup destination and log, deleting them before|
 |PGBCK_RETENTION_TYPE|integer|0|Selects the retention type. 0: disabled, 1: redundancy, 2: time-window|
 |PGBCK_RETENTION_LIMIT|integer|2|Indicates the number of backups to retain for redundancy or the time window for retaining backups|
-|PGBCK_BACKUP_DEST|string|"${PGBCK_DBHOST_SOURCE:-"nodbhost"}.pgbb"|Path that will contain the PostgreSQL backup(s)|
-|PGBCK_LOG_FILE|string|"/tmp/${PGBCK_BACKUP_DEST:-"nodbhost.pgbb"}.log"|Path to the log file for the backup|
 |PGBCK_RETENTION_MAX_LIMIT|integer|7|Maximum limit for redundancy, indicating the number of backups to retain|
 |PGBCK_RETENTION_MIN_LIMIT|integer|1|Minimum limit for redundancy, indicating the number of backups to retain|
 |PGBCK_RETENTION_TYPE_LIST|string|("disabled", "redundancy", "time-window")|Array listing the methods used for the retention check: disabled|
-|PGBCK_ONLY_TEST|string||Controls whether the backup is executed or only tested|
 
 ## Command line syntax
 
